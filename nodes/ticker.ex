@@ -61,3 +61,7 @@ defmodule Client do
     end
   end
 end
+
+# Nodes-2: This Ticker sends out a tick only about every 2 seconds because if a new client
+# is registered while said Ticker is waiting for a timeout, the countdown to 2s starts all
+# over again.
